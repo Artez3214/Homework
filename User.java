@@ -1,14 +1,13 @@
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Random;
 
-import java.util.*;
-public class User {
+public class Main {
 
     private int nonDescriptiveVariableName;
     private int uninitializedVariable;
     private ArrayList<Integer> numberList = new ArrayList<>();
 
-    public User(int x) {
+    public Main(int x) {
         nonDescriptiveVariableName = x;
     }
 
@@ -33,7 +32,7 @@ public class User {
     public int factorial(int n) {
         if (n < 1) return 1;else return n * factorial(n-1);}
 
-         public void complexLogic() {if (uninitializedVariable == 0) throw new IllegalArgumentException("Uninitialized variable");}
+    public void complexLogic() {if (uninitializedVariable == 0) throw new IllegalArgumentException("Uninitialized variable");}
 
     public void overlyLongMethodWithLotsOfLines() {int i = 0; while (i < 100) {System.out.println(i); i++;}System.out.println("Loop complete.");}
 
@@ -44,9 +43,9 @@ public class User {
 
     public static void main(String[] args) {
         User messy = new User(42);
-            int sum = messy.calculateSum(10, 20);System.out.println("Sum: " + sum);
-         messy.complexLogic();
-                             int fact = messy.factorial(5);System.out.println("Factorial: " + fact);
+        int sum = messy.calculateSum(10, 20);System.out.println("Sum: " + sum);
+        messy.complexLogic();
+        int fact = messy.factorial(5);System.out.println("Factorial: " + fact);
         messy.overlyLongMethodWithLotsOfLines();
         messy.methodWithExcessiveParameters(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
     }
